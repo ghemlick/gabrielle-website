@@ -1,0 +1,33 @@
+name: Notify subscribers
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - feed.xml
+
+jobs:
+  notify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
+
+      - name: Load previous feed.xml
+        id: previous
+        run: |
+          if git rev-parse HEAD~1 >/dev/null 2>&1 && git cat-file -e HEAD~1:feed.xml 2>/dev/null; then
+            git show HEAD~1:feed.xml > feed.old.xml
+            echo "found=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "found=false" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Create Buttondown email for new posts
+        if: steps.previous.outputs.found == 'true'
+        env:
+          BUTTONDOWN_API_KEY: ${{ secrets.BUTTONDOWN_API_KEY }}
+          # Use "draft" (review in Buttondown, then send) or "about_to_send" (auto-send).
+          EMAIL_STATUS: draft
+        run: python3 scripts/notify-subscribers.py feed.old.xml feed.xml

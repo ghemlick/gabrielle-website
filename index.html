@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Gabrielle Hemlick — personal site with work, writing, and contact."
+    />
+    <title>Gabrielle Hemlick</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;1,9..40,400&family=Instrument+Serif:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link
+      rel="alternate"
+      type="application/rss+xml"
+      title="Gabrielle Hemlick"
+      href="feed.xml"
+    />
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="nav" aria-label="Main">
+        <a class="logo" href="index.html">Gabrielle Hemlick</a>
+        <button
+          class="nav-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-label="Toggle menu"
+        >
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path d="M4 7h16M4 12h16M4 17h16" stroke="currentColor" stroke-width="1.5" />
+          </svg>
+        </button>
+        <ul class="nav-links">
+          <li><a href="about.html">About</a></li>
+          <li><a href="work.html">Work</a></li>
+          <li><a href="blog/index.html">Blog</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <span class="hero-label">Hello</span>
+        <h1>I build thoughtful things and write about what I learn.</h1>
+        <p class="hero-lead">
+          A personal corner of the web for projects, notes, and ways to get in touch.
+        </p>
+        <a class="button" href="work.html">View my work</a>
+        <a class="button button-secondary" href="contact.html">Say hello</a>
+      </section>
+
+      <section class="section" aria-labelledby="recent-writing">
+        <div class="section-header">
+          <h2 id="recent-writing">Recent writing</h2>
+          <p>Notes, ideas, and things worth sharing.</p>
+        </div>
+        <div class="card-grid">
+          <article class="card">
+            <p class="card-meta">August 2026</p>
+            <h3><a href="blog/starting-this-site.html">Starting this site</a></h3>
+            <p>Why I wanted a small, quiet place on the internet that I own.</p>
+          </article>
+          <article class="card">
+            <p class="card-meta">July 2026</p>
+            <h3><a href="blog/on-creative-routines.html">On creative routines</a></h3>
+            <p>What helps me show up consistently without burning out.</p>
+          </article>
+        </div>
+      </section>
+
+      <div data-subscribe-mount></div>
+    </main>
+
+    <footer class="site-footer">
+      <span>&copy; 2026 Gabrielle Hemlick</span>
+      <span>Built with care.</span>
+    </footer>
+
+    <script src="js/config.js"></script>
+    <script src="js/subscribe.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

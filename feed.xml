@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Gabrielle Hemlick</title>
+    <link>https://gabriellehemlick.com/blog/</link>
+    <description>Writing by Gabrielle Hemlick.</description>
+    <language>en-us</language>
+    <atom:link
+      href="https://gabriellehemlick.com/feed.xml"
+      rel="self"
+      type="application/rss+xml"
+    />
+
+    <item>
+      <title>Starting this site</title>
+      <link>https://gabriellehemlick.com/blog/starting-this-site.html</link>
+      <guid isPermaLink="true">https://gabriellehemlick.com/blog/starting-this-site.html</guid>
+      <pubDate>Tue, 12 Aug 2026 12:00:00 GMT</pubDate>
+      <description>Why I wanted a small, quiet place on the internet that I own.</description>
+    </item>
+
+    <item>
+      <title>On creative routines</title>
+      <link>https://gabriellehemlick.com/blog/on-creative-routines.html</link>
+      <guid isPermaLink="true">https://gabriellehemlick.com/blog/on-creative-routines.html</guid>
+      <pubDate>Fri, 18 Jul 2026 12:00:00 GMT</pubDate>
+      <description>What helps me show up consistently without burning out.</description>
+    </item>
+  </channel>
+</rss>
