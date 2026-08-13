@@ -29,5 +29,5 @@ jobs:
         env:
           BUTTONDOWN_API_KEY: ${{ secrets.BUTTONDOWN_API_KEY }}
           # Use "draft" (review in Buttondown, then send) or "about_to_send" (auto-send).
-          EMAIL_STATUS: draft
+          EMAIL_STATUS: about_to_send
         run: python3 scripts/notify-subscribers.py feed.old.xml feed.xml

@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Gabrielle Hemlick — personal site with work, writing, and contact."
+      content="Gabrielle Hemlick — platform engineer, teacher, and musician based in Brooklyn, NY."
     />
     <title>Gabrielle Hemlick</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -39,6 +39,7 @@
         <ul class="nav-links">
           <li><a href="about.html">About</a></li>
           <li><a href="work.html">Work</a></li>
+          <li><a href="media.html">Media</a></li>
           <li><a href="blog/index.html">Blog</a></li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
@@ -47,13 +48,44 @@
 
     <main>
       <section class="hero">
-        <span class="hero-label">Hello</span>
-        <h1>I build thoughtful things and write about what I learn.</h1>
-        <p class="hero-lead">
-          A personal corner of the web for projects, notes, and ways to get in touch.
-        </p>
-        <a class="button" href="work.html">View my work</a>
-        <a class="button button-secondary" href="contact.html">Say hello</a>
+        <div class="hero-content">
+          <span class="hero-label">Hello</span>
+          <h1>I connect technical depth with the people side of the work.</h1>
+          <ul class="hero-meta">
+            <li>Brooklyn, NY</li>
+            <li>Penn CS + Music</li>
+            <li>Former IBM Platform Engineer</li>
+          </ul>
+          <p class="hero-lead">
+            I’ve spent the last few years leading client proof-of-concepts, building
+            conversational AI demos, and teaching computer science — with a violin case
+            never too far away.
+          </p>
+          <a class="button" href="work.html">See my work</a>
+          <a class="button button-secondary" href="assets/Gabrielle-Hemlick-resume.pdf">Download resume</a>
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="media-preview">
+        <div class="section-header">
+          <h2 id="media-preview">In photos</h2>
+          <p>Penn, IBM Summit, and a few moments along the way.</p>
+        </div>
+        <div class="media-preview-grid">
+          <a class="media-preview" href="media.html">
+            <img src="assets/ibm-summit-join.jpg" alt="Joining IBM Summit Program" loading="lazy" />
+            <span>Joining IBM Summit</span>
+          </a>
+          <a class="media-preview" href="media.html">
+            <img src="assets/ibm-summit-cohort.jpg" alt="IBM Summit intern cohort" loading="lazy" />
+            <span>IBM Summit cohort</span>
+          </a>
+          <a class="media-preview" href="media.html">
+            <img src="assets/ibm-summit-graduation.jpg" alt="IBM Summit graduation" loading="lazy" />
+            <span>Summit graduation</span>
+          </a>
+        </div>
+        <p class="section-footer-link"><a href="media.html">See all media →</a></p>
       </section>
 
       <section class="section" aria-labelledby="recent-writing">
@@ -65,12 +97,12 @@
           <article class="card">
             <p class="card-meta">August 2026</p>
             <h3><a href="blog/starting-this-site.html">Starting this site</a></h3>
-            <p>Why I wanted a small, quiet place on the internet that I own.</p>
+            <p>Why I wanted a small corner of the internet that feels like mine.</p>
           </article>
           <article class="card">
             <p class="card-meta">July 2026</p>
             <h3><a href="blog/on-creative-routines.html">On creative routines</a></h3>
-            <p>What helps me show up consistently without burning out.</p>
+            <p>What helps me show up consistently — in code, in music, and in life.</p>
           </article>
         </div>
       </section>
@@ -80,7 +112,11 @@
 
     <footer class="site-footer">
       <span>&copy; 2026 Gabrielle Hemlick</span>
-      <span>Built with care.</span>
+      <span>
+        <a href="https://www.linkedin.com/in/gabriellehemlick/">LinkedIn</a>
+        ·
+        <a href="https://github.com/ghemlick">GitHub</a>
+      </span>
     </footer>
 
     <script src="js/config.js"></script>
